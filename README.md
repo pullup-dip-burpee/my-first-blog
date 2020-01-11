@@ -1,2 +1,2 @@
 # my-first-blog
-- Djangogirls
+- All contents are from [Djangogirls](https://tutorial.djangogirls.org/ko/)
