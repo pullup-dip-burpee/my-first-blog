@@ -24,6 +24,9 @@ ol {
     margin: 0px;
     padding: 20px;
 }
+iframe{
+    position: relative;
+}
 #grid{
     border:5px solid black;
     display: grid;
