@@ -45,6 +45,7 @@ iframe{
     }
     ol{
       border-right:none;
+      border-bottom: 5px solid black;
     }
     h1 {
       border-bottom:solid 1px black;
