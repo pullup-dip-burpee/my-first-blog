@@ -8,6 +8,35 @@
     <meta charset = "utf-8">
     <link rel="stylesheet" href="style.css">
 
+    <script>
+        function nightDayHandler(self){
+            var target = document.querySelector('body');
+            if(self.value === 'night'){
+                target.style.backgroundColor = 'black';
+                target.style.color = 'white';
+                self.value = 'day';
+
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while(i < alist.length){
+                    alist[i].style.color = 'powderblue';
+                    i++;
+                }
+            }
+            else{
+                target.style.backgroundColor = 'white';
+                target.style.color = 'black';
+                self.value = 'night';
+
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while(i < alist.length){
+                    alist[i].style.color = 'black';
+                    i++;
+                }
+            }
+        }
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157518855-1"></script>
     <script>
@@ -21,6 +50,11 @@
 </head>
 <p>
     <h1><a href="index.html">헬린이의 운동일지</a></h1>
+
+    <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+    ">
+    
     <div id="grid">
         <ol>
             <li><a href="Squat.html">Squat</a></li>
@@ -36,10 +70,12 @@
                 HTML, CSS 등 웹개발 연습용으로 만든 헬린이 박은천의 운동일지. 운동 관련해서 잘못된 정보가 있을 수 있습니다.
             </p>
             <p>
-                
+                <input type="text" onchange="alert('아직 기능 없다')">
+                <input type="button" value="hello" onclick="alert('기능 안만들었다')">
             </p>
         </div>
     </div>
+    
         <div id="disqus_thread"></div>
     <script>
     
